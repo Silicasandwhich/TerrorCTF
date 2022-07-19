@@ -1,17 +1,11 @@
 .centered{
     margin: auto;
     display: block;
-
-
-
     width: 300px
-}
-
-.login-form{
-    color: white;
 }
 
 body{
     background-color: black;
     font-family: sans-serif;
+    color: white;
 }
