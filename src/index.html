@@ -5,19 +5,24 @@
         <link rel="stylesheet" href="static/style.css">
     </head>
     <body>
-        <span class="login-form">
+        <form class="login-form">
             <div class="centered">
                 <h1>CIA Secret Login</h1>
                 <img src="https://logosmarcas.net/wp-content/uploads/2020/12/CIA-Emblema.png" width="90%">
             </div>
     
             <div class="centered">
-                <p>Username: <input id="username" title="Username"></p>
-                <p>Password: <input id="password" title="Password"></p>
+                <p>Username: <input type="text" placeholder="Username" name="uname" required></p>
+                <p>Password: <input type="password" placeholder="Password" name="psw" required></p>
             </div>
             <div class="centered">
-                <button id="login">Log In</button>
+                <button type="submit">Log In</button>
             </div>
-        </span>
+        </form>
+        <form>
+            <div class="centered">
+                <button type="submit">Log In as Guest</button>
+            </div>
+        </form>
     </body>
 </html>
