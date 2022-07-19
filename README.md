@@ -8,4 +8,4 @@ a CTF challenge for RHIT Capapult 2022
 | image    | dan          | done        |   |   |
 | website  | ?            | not started |   |   |
 | poster   | ?            | not started |   |   |
-| summary  | ?            | not started |   |   |
+| summary  | ?            | started     |   |   |
