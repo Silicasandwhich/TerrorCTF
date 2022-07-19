@@ -1,4 +1,5 @@
 .centered{
-    margin: 10px auto 20px;
+    margin: auto;
     display: block;
+    width: 300px
 }
