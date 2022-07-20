@@ -1,0 +1,6 @@
+############################
+#       SUPER SECRET       #
+#(and, stored in plaintext)#
+############################
+
+flag: CatapultCTF{s4N17iz3_uR_1npUt5_9a08s990a8ysd}
