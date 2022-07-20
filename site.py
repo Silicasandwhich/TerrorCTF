@@ -35,7 +35,9 @@ def homepage():
 
 @app.route('/otp')
 def otp_landing():
-    return render_template('oneTimePassowrd.html')
+    if request.cookies.get('account_type') == 'admin':
+        return render_template('oneTimePassowrd.html')
+    return redirect(url_for('homepage'))
 
 @app.route('/logout')
 def logout():
@@ -44,7 +46,7 @@ def logout():
         resp.set_cookie(cookie, '')
     return resp
 
-@app.route('/otp/authenticate', methods=['GET','POST'])
+@app.route('/otp/authenticate', methods=['POST'])
 def authenticate_otp():
     # throws error if user enters non-integer password
     # just wrap it in a try/catch for now
