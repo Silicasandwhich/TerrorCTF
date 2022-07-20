@@ -1,14 +1,16 @@
 <html>
 	<head> 
 		<title> Password Authentication </title>
+		<link rel="stylesheet" href="static/style.css">
 	</head>
 
 	<body>
 		<div class="centered">
-            <h1>CIA One-Time Password Authentication</h1>
+            <h1>One-Time Password Authentication</h1>
 			<img src="https://logosmarcas.net/wp-content/uploads/2020/12/CIA-Emblema.png" width="50%">
+			<p> A 20-digit one-time passcode has been sent to your communicator. please enter it here (numerals 0-9 only)</p>
 		</div>
-
+		<form action="otp/authenticate" method="post">
 		<div class="centered">
 			<p>One-Time Password: <input type="password" placeholder="Password" name="psw" required></p>
 		</div>
@@ -17,5 +19,9 @@
 			<button type="submit">Submit Password</button> 
 		</div>
 
+		<span class="centered">
+			<p>time until passcode reset:</p><img src="static/otp_reset.gif" width="25%">
+		</span>
+		</form>
 	</body>
 </html>
