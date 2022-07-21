@@ -25,7 +25,7 @@ def guest_login():
 
 @app.route('/home')
 def homepage():
-    if 'account_type' in request.cookies:
+    if ('account_type' in request.cookies) and (request.cookies.get('account_type') != ''):
         if request.cookies.get('account_type') == 'admin':
             if request.cookies.get('admin_token') == ADMIN_TOKEN:
                 return render_template('success.html')
