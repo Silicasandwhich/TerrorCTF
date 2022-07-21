@@ -3,4 +3,4 @@
 #(and, stored in plaintext)#
 ############################
 
-flag: CatapultCTF{s4N17iz3_uR_1npUt5_9a08s990a8ysd}
+fake flag: CatapultCTF{Th1S_I5_a_F4K3_FL4G_0xiod8318h9sob}
